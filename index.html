@@ -1,18 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Trang chủ</title>
-  <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Sơn</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/Font/themify-icons/themify-icons.css">
 </head>
-<body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="stories.html">Stories</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <h1>Chào mừng đến với Website chia sẻ động lực</h1>
-  <p>Đây là nơi bạn có thể đọc và chia sẻ những câu chuyện thất bại và bài học quý giá.</p>
+
+<body class="night-mode">
+    <div id="night-sky-container">
+    </div>
+
+    <div id="night-sky-container">
+        <div class="stars1"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <div id="main">
+        <div id="header">
+            
+
+            <div class="header-right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#infor">Infor</a></li>
+                </ul>
+            </div>
+
+           
+
+        </div>
+        <div id="slider">
+            <div class="slider-img">
+                <div class="slider-text">
+                    <h1>Welcome to PVS</h1>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="content-body" id="infor">
+                <div class="contact-ava-shadow">
+                </div>
+                <div class="content-ava">
+                    <img src="/css/img/z7153658796139_c1709a460beb17cbd0d4459c3afd8917.jpg" alt="">
+                </div>
+
+                <div class="content-inf ">
+                    <div class="icon">
+                        <div class="fb">
+                            <a target="_blank" href="https://www.facebook.com/phamson42">
+                                <i class="ti-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="email js-btn-email">
+                            <i class="ti-email"></i>
+                        </div>
+                        <div class="sdt js-btn-sdt">
+                            <img src="/css/img/—Pngtree—telephone glyph icon vector_5199512.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-img"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-sdt">
+        
+            <div class="content-sdt">
+                <button class="js-close-sdt">
+                    <i class="ti-close"></i>
+                </button>
+                <h3>0703139442</h3>
+            </div>
+      
+    </div>
+
+    <div class="modal-email">
+        <div class="content-email">
+            <button class="js-close-email">
+                <i class="ti-close"></i>
+            </button>
+            <h3>phamvanson422003@gmail.com</h3>
+        </div>
+    </div>
+
+    <script>
+        // Script modal cũ của bạn
+        const icSdt = document.querySelector('.js-btn-sdt')
+        const icEmail = document.querySelector('.js-btn-email')
+        const modalSdt = document.querySelector('.modal-sdt')
+        const modalEmail = document.querySelector('.modal-email')
+        const closeSdt = document.querySelector('.js-close-sdt')
+        const closeEmail = document.querySelector('.js-close-email')
+        function showModalSdt() {
+            modalSdt.classList.add('open')
+        }
+        function showModalEmail() {
+            modalEmail.classList.add('open')
+        }
+        function removeSdt() {
+            modalSdt.classList.remove('open')
+        }
+        function removeEmail() {
+            modalEmail.classList.remove('open')
+        }
+        closeSdt.addEventListener('click', removeSdt)
+        closeEmail.addEventListener('click', removeEmail)
+
+        icSdt.addEventListener('click', showModalSdt)
+        icEmail.addEventListener('click', showModalEmail)
+
+    </script>
 </body>
+
 </html>
